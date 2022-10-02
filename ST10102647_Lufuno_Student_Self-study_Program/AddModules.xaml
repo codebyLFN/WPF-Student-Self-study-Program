@@ -1,0 +1,56 @@
+﻿<Window x:Class="ST10102647_Lufuno_Student_Self_study_Program.AddModules"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ST10102647_Lufuno_Student_Self_study_Program"
+        mc:Ignorable="d"
+        Title="AddModules" Height="450" Width="800" ResizeMode="NoResize">
+    <Grid>
+        <TextBlock Name="lblname"    HorizontalAlignment="Left" Margin="51,89,0,0" TextWrapping="Wrap" Text="Input Module Name" VerticalAlignment="Top" Visibility="Hidden"/>
+        <TextBlock Name="lblcode" Visibility="Hidden" HorizontalAlignment="Left" Margin="53,54,0,0" TextWrapping="Wrap" Text="Input Module Code" VerticalAlignment="Top"/>
+        <DatePicker Name="SemesterStart" HorizontalAlignment="Left" Margin="263,21,0,0" VerticalAlignment="Top" Width="176"/>
+        <TextBlock HorizontalAlignment="Left" Margin="51,21,0,0" TextWrapping="Wrap" Text="When does Your Semester Start?" VerticalAlignment="Top"/>
+        <TextBlock Name="lblclasshours" Visibility="Hidden"  HorizontalAlignment="Left" Margin="51,165,0,0" TextWrapping="Wrap" Text="Input Weekly Module Class Hours" VerticalAlignment="Top"/>
+        <TextBlock Name="lblsemesterweeks" Visibility="Hidden"  HorizontalAlignment="Left" Margin="51,0,0,0" TextWrapping="Wrap" Text="Input Total Semester Weeks" VerticalAlignment="Center"/>
+        <TextBlock Name="lbldatechosen" Visibility="Hidden"  HorizontalAlignment="Left" Margin="46,253,0,0" TextWrapping="Wrap" Text="Choose Date in 1st Semester Week" VerticalAlignment="Top"/>
+        <DatePicker Name="Chosendate" Visibility="Hidden"  HorizontalAlignment="Left" Margin="263,245,0,0" VerticalAlignment="Top" Width="176"/>
+        <TextBlock Name="lblspecific" Visibility="Hidden"  HorizontalAlignment="Left" Margin="65,292,0,0" TextWrapping="Wrap" Text="Record Number of Hours You would study Module on that specific day" VerticalAlignment="Top"/>
+        <TextBox Name="txtCode"   HorizontalAlignment="Left" Margin="263,54,0,0" TextWrapping="NoWrap" Text="" VerticalAlignment="Top" Width="176" VerticalScrollBarVisibility="Auto" Visibility="Hidden"></TextBox>
+        <TextBox Name="txtName" HorizontalAlignment="Left" Margin="263,88,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="176" Visibility="Hidden"/>
+        <TextBox Name="txteeklyclasshours" Visibility="Hidden"  HorizontalAlignment="Left" Margin="263,165,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="176"/>
+        <TextBox Name="txtTotalsemesterweeks" Visibility="Hidden"  HorizontalAlignment="Left" Margin="263,207,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="176"/>
+        <TextBlock Name="lblcredits"  Visibility="Hidden"  HorizontalAlignment="Left" Margin="51,126,0,0" TextWrapping="Wrap" Text="Input Module Credits" VerticalAlignment="Top"/>
+        <TextBox Name="txtCredits" Visibility="Hidden"  HorizontalAlignment="Left" Margin="263,126,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="176"/>
+        <TextBox Name="txtSpecificDateHours" Visibility="Hidden"  HorizontalAlignment="Left" Margin="263,339,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="176"/>
+        <Button Name="btnSave" Content="SAVE" HorizontalAlignment="Left" Margin="172,363,0,0" VerticalAlignment="Top" Click="btnSave_Click" Height="38" Width="94" FontWeight="Bold" FontSize="16">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="5"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+        <Button Name="btnexit1" Content="EXIT" HorizontalAlignment="Left" Margin="484,362,0,0" VerticalAlignment="Top" Height="39" Width="127" Click="btnexit1_Click" FontWeight="Bold" FontSize="16">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="5"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+        <Button Name="btnclear" Content="CLEAR" HorizontalAlignment="Left" Margin="312,362,0,0" VerticalAlignment="Top" Height="39" Width="127" RenderTransformOrigin="0.514,0.617" Click="btnclear_Click" FontWeight="Bold" FontSize="16">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="5"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+        <ListBox Name="couseSaved" Margin="536,10,10,77" Visibility="Hidden"/>
+        <Button Name="btnsemstart" Content="Procced" HorizontalAlignment="Left" Margin="461,22,0,0" VerticalAlignment="Top" Click="btnsemstart_Click"/>
+        <Button Name="btncode" Visibility="Hidden"  Content="Procced" HorizontalAlignment="Left" Margin="461,53,0,0" VerticalAlignment="Top" Click="btncode_Click"/>
+        <Button Name="btnName" Visibility="Hidden"  Content="Procced" HorizontalAlignment="Left" Margin="461,88,0,0" VerticalAlignment="Top" Click="btnName_Click"/>
+        <Button Name="btnCredits" Visibility="Hidden"  Content="Procced" HorizontalAlignment="Left" Margin="461,126,0,0" VerticalAlignment="Top" Click="btnClass_Click"/>
+        <Button Name="btnweekly" Visibility="Hidden"  Content="Procced" HorizontalAlignment="Left" Margin="461,165,0,0" VerticalAlignment="Top" Click="btnweekly_Click"/>
+        <Button Name="btnsemsweeks" Visibility="Hidden"  Content="Procced" HorizontalAlignment="Left" Margin="461,206,0,0" VerticalAlignment="Top" Click="btnsemsweeks_Click"/>
+        <Button Name="btndatechosen" Visibility="Hidden"  Content="Procced" HorizontalAlignment="Left" Margin="461,245,0,0" VerticalAlignment="Top" Click="btndatechosen_Click"/>
+    </Grid>
+</Window>

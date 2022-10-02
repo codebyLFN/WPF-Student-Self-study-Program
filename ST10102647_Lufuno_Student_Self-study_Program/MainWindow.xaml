@@ -1,0 +1,40 @@
+﻿<Window x:Class="ST10102647_Lufuno_Student_Self_study_Program.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ST10102647_Lufuno_Student_Self_study_Program"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="400" Width="600" ResizeMode="NoResize">
+    <Grid>
+        <Canvas HorizontalAlignment="Left" Height="384" VerticalAlignment="Center" Width="100" Background="#FFB696B4">
+            <Label Content="Student Self-Study Management System" HorizontalAlignment="Left" VerticalAlignment="Top" Width="320" Foreground="#FFEDF9F9" FontSize="16" FontWeight="Bold" Height="46" Canvas.Top="160" RenderTransformOrigin="0.5,0.5" Canvas.Left="-111">
+                <Label.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="-90.04"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Label.RenderTransform>
+            </Label>
+        </Canvas>
+        <Button Name="btnadd" Content="Add Modules" Margin="192,87,123,217" Click="btnadd_Click" FontWeight="Bold" FontSize="25" >
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="5"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+
+        <Button x:Name="btnexit" Content="EXIT" Margin="192,217,123,87" Click="btnexit_Click" FontSize="26" FontWeight="Bold">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="5"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+
+
+    </Grid>
+</Window>
